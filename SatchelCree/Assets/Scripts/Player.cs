@@ -11,9 +11,13 @@ public class Player : MonoBehaviour
 	public bool isMoving;
 	public bool isInCombat;
 
+	public Main mainScript;
 	//cameras
 	public GameObject CameraMain;
 	public GameObject CombatCamera;
+
+	//Region
+	public string inRegion;
 
 
 	// Use this for initialization
