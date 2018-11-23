@@ -8,6 +8,9 @@ public class Main : MonoBehaviour
 	[SerializeField]
 	public List<Phantom> allPhantoms;
 
+	[SerializeField]
+	public List<Ability> allAbilities;
+
 	Phantom enemyMonster;
 	Phantom usedMonster;
 
@@ -32,65 +35,9 @@ public class Main : MonoBehaviour
 		if(playerCharacter.isInCombat)
 		{
 			GUI.Label(new Rect(50, 100, 200, 100), "" + enemyMonster.GetName());
-			GUI.DrawTexture(new Rect(70, 100, 128, 128), enemyMonster.image);
+			GUI.Label(new Rect(50, 110, 200, 100), "" + enemyMonster.GetName());
+			GUI.DrawTexture(new Rect(70, 150, 128, 128), enemyMonster.image);
 		}
 	}
 }
 
-
-
-
-
-
-[System.Serializable]
-public class Phantom
-{
-	
-	public Type type;
-	public Rarity rarity;
-	public Texture image;
-
-	public string regionLocated;
-
-	public string name;
-	public string nickName;
-
-	public float baseHealth;
-	public float currentHealth;
-
-	public float basePower;
-	public float currentPower;
-
-	public float baseDefense;
-	public float currentDefense;
-
-	public float baseAgility;
-	public float currentAgility;
-
-	public string GetName()
-	{
-		if(nickName != "")
-		{
-			return nickName;
-		}
-		return name;
-	}
-
-}
-
-public enum Type
-{
-	Earth,
-	Wind,
-	Fire,
-	Water
-}
-
-public enum Rarity
-{
-	Common,
-	Uncommon,
-	Rare,
-	UltraRare,
-	Legendary
-}

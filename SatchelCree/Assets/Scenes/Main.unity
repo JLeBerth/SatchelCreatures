@@ -1168,76 +1168,131 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   allPhantoms:
-  - type: 2
+  - name: Fire Tester
+    nickName: 
+    type: 3
     rarity: 0
     image: {fileID: 2800000, guid: 1867ae2a40f2e414a9c9ac2627472c3a, type: 3}
-    regionLocated: 
-    name: FireTestBoy
-    nickName: 
     baseHealth: 10
     currentHealth: 10
+    baseStamina: 10
+    currentStamina: 10
     basePower: 5
     currentPower: 5
-    baseDefense: 15
-    currentDefense: 15
+    baseDefense: 5
+    currentDefense: 5
     baseAgility: 2
     currentAgility: 2
-  - type: 0
-    rarity: 0
-    image: {fileID: 2800000, guid: 1e1e33db17b2def43b51f4e91d15e739, type: 3}
-    regionLocated: 
-    name: EarthTestBoy
+    learnableAbilities:
+    - learnAtLevel: 0
+      toLearn:
+        name: 
+        moveType: 0
+        staminaCost: 0
+        damage: 0
+        accuracy: 0
+    - learnAtLevel: 0
+      toLearn:
+        name: 
+        moveType: 0
+        staminaCost: 0
+        damage: 0
+        accuracy: 0
+    knownAbilities:
+    - name: 
+      moveType: 0
+      staminaCost: 0
+      damage: 0
+      accuracy: 0
+    - name: 
+      moveType: 0
+      staminaCost: 0
+      damage: 0
+      accuracy: 0
+    equippedAbilities: []
+  - name: 
     nickName: 
-    baseHealth: 15
-    currentHealth: 15
-    basePower: 7
-    currentPower: 7
-    baseDefense: 20
-    currentDefense: 20
-    baseAgility: 3
-    currentAgility: 3
-  - type: 0
+    type: 0
     rarity: 0
     image: {fileID: 0}
-    regionLocated: 
-    name: 
-    nickName: 
     baseHealth: 0
     currentHealth: 0
+    baseStamina: 0
+    currentStamina: 0
     basePower: 0
     currentPower: 0
     baseDefense: 0
     currentDefense: 0
     baseAgility: 0
     currentAgility: 0
-  - type: 0
+    learnableAbilities: []
+    knownAbilities: []
+    equippedAbilities: []
+  - name: 
+    nickName: 
+    type: 0
     rarity: 0
     image: {fileID: 0}
-    regionLocated: 
-    name: 
-    nickName: 
     baseHealth: 0
     currentHealth: 0
+    baseStamina: 0
+    currentStamina: 0
     basePower: 0
     currentPower: 0
     baseDefense: 0
     currentDefense: 0
     baseAgility: 0
     currentAgility: 0
-  - type: 0
+    learnableAbilities: []
+    knownAbilities: []
+    equippedAbilities: []
+  - name: 
+    nickName: 
+    type: 0
     rarity: 0
     image: {fileID: 0}
-    regionLocated: 
-    name: 
-    nickName: 
     baseHealth: 0
     currentHealth: 0
+    baseStamina: 0
+    currentStamina: 0
     basePower: 0
     currentPower: 0
     baseDefense: 0
     currentDefense: 0
     baseAgility: 0
     currentAgility: 0
+    learnableAbilities: []
+    knownAbilities: []
+    equippedAbilities: []
+  - name: 
+    nickName: 
+    type: 0
+    rarity: 0
+    image: {fileID: 0}
+    baseHealth: 0
+    currentHealth: 0
+    baseStamina: 0
+    currentStamina: 0
+    basePower: 0
+    currentPower: 0
+    baseDefense: 0
+    currentDefense: 0
+    baseAgility: 0
+    currentAgility: 0
+    learnableAbilities: []
+    knownAbilities: []
+    equippedAbilities: []
+  allAbilities:
+  - name: Punch
+    moveType: 0
+    staminaCost: 0
+    damage: 5
+    accuracy: 1
+  - name: Spicey Breath
+    moveType: 3
+    staminaCost: 2
+    damage: 10
+    accuracy: 1
 --- !u!4 &1459423082
 Transform:
   m_ObjectHideFlags: 0
