@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.3731193, g: 0.38073996, b: 0.35872698, a: 1}
+  m_IndirectSpecularColor: {r: 0.37311992, g: 0.38074034, b: 0.35872713, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1167,9 +1167,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fba06dfa3dc22d848a9cc37fc7ae725e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player: {fileID: 861383773}
   allPhantoms:
   - name: Fire Tester
     nickName: 
+    level: 1
     type: 3
     rarity: 0
     image: {fileID: 2800000, guid: 1867ae2a40f2e414a9c9ac2627472c3a, type: 3}
@@ -1184,34 +1186,38 @@ MonoBehaviour:
     baseAgility: 2
     currentAgility: 2
     learnableAbilities:
-    - learnAtLevel: 0
-      toLearn:
-        name: 
-        moveType: 0
-        staminaCost: 0
-        damage: 0
-        accuracy: 0
-    - learnAtLevel: 0
-      toLearn:
-        name: 
-        moveType: 0
-        staminaCost: 0
-        damage: 0
-        accuracy: 0
-    knownAbilities:
-    - name: 
-      moveType: 0
-      staminaCost: 0
-      damage: 0
-      accuracy: 0
-    - name: 
-      moveType: 0
-      staminaCost: 0
-      damage: 0
-      accuracy: 0
+    - learnAtLevel: 1
+      toLearn: 0
+    - learnAtLevel: 4
+      toLearn: 1
+    knownAbilities: 0000000000000000
+    equippedAbilities: []
+  - name: Pipip
+    nickName: 
+    level: 1
+    type: 1
+    rarity: 4
+    image: {fileID: 2800000, guid: daffda759bfb0fb4c8ba4c9e7789d6b2, type: 3}
+    baseHealth: 20
+    currentHealth: 20
+    baseStamina: 20
+    currentStamina: 20
+    basePower: 7
+    currentPower: 7
+    baseDefense: 7
+    currentDefense: 7
+    baseAgility: 3
+    currentAgility: 3
+    learnableAbilities:
+    - learnAtLevel: 1
+      toLearn: 0
+    - learnAtLevel: 4
+      toLearn: 2
+    knownAbilities: 
     equippedAbilities: []
   - name: 
     nickName: 
+    level: 0
     type: 0
     rarity: 0
     image: {fileID: 0}
@@ -1226,10 +1232,11 @@ MonoBehaviour:
     baseAgility: 0
     currentAgility: 0
     learnableAbilities: []
-    knownAbilities: []
+    knownAbilities: 
     equippedAbilities: []
   - name: 
     nickName: 
+    level: 0
     type: 0
     rarity: 0
     image: {fileID: 0}
@@ -1244,10 +1251,11 @@ MonoBehaviour:
     baseAgility: 0
     currentAgility: 0
     learnableAbilities: []
-    knownAbilities: []
+    knownAbilities: 
     equippedAbilities: []
   - name: 
     nickName: 
+    level: 0
     type: 0
     rarity: 0
     image: {fileID: 0}
@@ -1262,25 +1270,7 @@ MonoBehaviour:
     baseAgility: 0
     currentAgility: 0
     learnableAbilities: []
-    knownAbilities: []
-    equippedAbilities: []
-  - name: 
-    nickName: 
-    type: 0
-    rarity: 0
-    image: {fileID: 0}
-    baseHealth: 0
-    currentHealth: 0
-    baseStamina: 0
-    currentStamina: 0
-    basePower: 0
-    currentPower: 0
-    baseDefense: 0
-    currentDefense: 0
-    baseAgility: 0
-    currentAgility: 0
-    learnableAbilities: []
-    knownAbilities: []
+    knownAbilities: 
     equippedAbilities: []
   allAbilities:
   - name: Punch
@@ -1291,7 +1281,12 @@ MonoBehaviour:
   - name: Spicey Breath
     moveType: 3
     staminaCost: 2
-    damage: 10
+    damage: 8
+    accuracy: 1
+  - name: Vore
+    moveType: 1
+    staminaCost: 5
+    damage: 8
     accuracy: 1
 --- !u!4 &1459423082
 Transform:

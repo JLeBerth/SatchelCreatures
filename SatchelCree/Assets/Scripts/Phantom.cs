@@ -8,6 +8,8 @@ public class Phantom
 	public string name;
 	public string nickName;
 
+    public int level;
+
 	public Type type;
 	public Rarity rarity;
 
@@ -30,7 +32,7 @@ public class Phantom
 	public float currentAgility;
 
 	public List<Learnables> learnableAbilities;
-	public List<Ability> knownAbilities;
+	public List<int> knownAbilities;
 	public List<Ability> equippedAbilities;
 
 	public string GetName()
@@ -42,6 +44,17 @@ public class Phantom
 		return name;
 	}
 
+
+    public void GetKnownMoves()
+    {
+        foreach (Learnables thislearnable in learnableAbilities)
+        {
+            if (this.level >= thislearnable.learnAtLevel)
+            {
+                knownAbilities.Add(thislearnable.toLearn);
+            }
+        }
+    }
 }
 
 /// <summary>
@@ -51,7 +64,7 @@ public class Phantom
 public class Learnables
 {
 	public int learnAtLevel;
-	public Ability toLearn;
+	public int toLearn;
 }
 
 public enum Type
